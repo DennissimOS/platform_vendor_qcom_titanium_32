@@ -79,7 +79,8 @@ endif  #TARGET_ENABLE_QC_AV_ENHANCEMENTS
 PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapminfree=6m \
        dalvik.vm.heapstartsize=14m \
-       vendor.mediacodec.binder.size=6
+       vendor.mediacodec.binder.size=6 \
+       vendor.vidc.disable.split.mode=1
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, device/qcom/common/common.mk)
